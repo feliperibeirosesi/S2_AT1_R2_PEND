@@ -1,0 +1,12 @@
+let numero = parseFloat(prompt("Digite seu numero: ")); // Pede um número ao usuário.
+
+function numerosPares() {
+    // Laço de repetição de 0 até o número digitado.
+    for (let i = 0; i <= numero; i++) {
+        if (i % 2 === 0) { // Verifica se o número é par.
+            console.log(i); // Exibe o número par.
+        }
+    }
+}
+
+numerosPares(); // Chama a função que exibe os números pares.
