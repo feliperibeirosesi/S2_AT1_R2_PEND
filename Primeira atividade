@@ -1,0 +1,9 @@
+// Solicita um número ao usuário e gera a tabuada desse número.
+let numero = parseFloat(prompt("Digite um número: ")); // Pede para o usuário digitar um número e converte para float.
+
+function tabuada(numero) {
+    // Laço de repetição que vai de 1 a 10 para gerar a tabuada do número digitado.
+    for(let i = 1; i <= 10; i++) {
+        console.log(`${i} x ${numero} = ${i * numero}`); // Exibe a tabuada do número.
+    }
+}
