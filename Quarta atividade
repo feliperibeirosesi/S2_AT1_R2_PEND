@@ -1,0 +1,10 @@
+let numero = parseFloat(prompt("Digite um número: ")); // Pede para o usuário digitar um número.
+
+function tabuada(numero) {
+    // Laço que começa do número e vai até 1.
+    for (let i = numero; i >= 1; i--) {
+        console.log(i); // Exibe o número de forma decrescente.
+    }
+}
+
+tabuada(numero); // Chama a função passando o número digitado.
