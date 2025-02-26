@@ -1,0 +1,17 @@
+let Nota = parseFloat(prompt()); // Pede para o usuário digitar uma nota.
+
+function classificarNota(nota) {
+    if (Nota < 3) {
+        console.log("Ruim"); // Classifica como "Ruim" para notas abaixo de 3.
+    } else if (Nota < 5) {
+        console.log("Regular"); // Classifica como "Regular" para notas abaixo de 5.
+    } else if (Nota < 7) {
+        console.log("Good"); // Classifica como "Good" para notas abaixo de 7.
+    } else if (Nota < 9) {
+        console.log("Ótimo"); // Classifica como "Ótimo" para notas abaixo de 9.
+    } else if (Nota < 10) {
+        console.log("Excelente"); // Classifica como "Excelente" para notas abaixo de 10.
+    }
+}
+
+classificarNota(Nota); // Chama a função passando a nota informada pelo usuário.
