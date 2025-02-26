@@ -7,3 +7,5 @@ function tabuada(numero) {
         console.log(`${i} x ${numero} = ${i * numero}`); // Exibe a tabuada do número.
     }
 }
+
+tabuada(numero); // Chama a função passando o número digitado.
