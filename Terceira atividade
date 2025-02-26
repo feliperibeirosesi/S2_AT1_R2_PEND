@@ -1,0 +1,13 @@
+// Solicita um número ao usuário e soma todos os números de 1 até esse número, mostrando a soma progressiva.
+let numero = parseFloat(prompt("Digite um número: ")); // Pede um número ao usuário.
+let conta = 0; // Variável para armazenar a soma.
+
+function somaAteN(numero) {
+    // Laço de repetição de 1 até o número informado.
+    for(let i = 1; i <= numero; i++) {
+        conta += i; // Soma os números progressivamente.
+        console.log(conta); // Exibe a soma a cada iteração.
+    }
+}
+
+somaAteN(numero); // Chama a função passando o número digitado.
