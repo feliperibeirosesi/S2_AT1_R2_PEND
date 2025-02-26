@@ -1,0 +1,19 @@
+let numero = parseFloat(prompt("Digite seu número imperfeito: ")); // Pede um número ao usuário.
+let soma = 0; // Variável para armazenar a soma dos divisores.
+
+function ehNumeroPerfeito(numero) {
+    if (numero === 0) {
+        return false; // Se o número for 0, não é perfeito.
+    }
+    for (let i = 1; i < numero; i++) { 
+        if (numero % i === 0) { // Verifica se o número i é divisor de numero.
+            soma += i; // Soma os divisores de numero.
+        }
+    }
+    if (soma === numero) {
+        return true; // Se a soma dos divisores for igual ao número, é perfeito.
+    }
+    return false; // Caso contrário, não é perfeito.
+}
+
+console.log(ehNumeroPerfeito(numero)); // Exibe se o número é perfeito ou não.
