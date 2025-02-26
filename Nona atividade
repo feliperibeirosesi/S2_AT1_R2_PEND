@@ -1,0 +1,17 @@
+let a = parseFloat(prompt("Digite um número: ")); // Pede o primeiro número.
+let b = parseFloat(prompt("Digite um número: ")); // Pede o segundo número.
+let operadores = prompt("Digite um operador +, - , * , / "); // Pede o operador desejado.
+
+function calculadora(a, b, operadores) {
+    if (operadores == "+") {
+        console.log(a + b); // Soma
+    } else if (operadores == "-") {
+        console.log(a - b); // Subtração
+    } else if (operadores == "*") {
+        console.log(a * b); // Multiplicação
+    } else if (operadores == "/") {
+        console.log(a / b); // Divisão
+    }
+}
+
+calculadora(a, b, operadores); // Chama a função passando os valores de a, b e operador.
