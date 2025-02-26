@@ -1,0 +1,10 @@
+let numero = parseFloat(prompt("Digite um numero: ")); // Pede para o usuário digitar um número.
+let soma = 0; // Variável para armazenar a soma dos números.
+
+while (numero >= 0) { 
+    soma += numero; // Soma os números positivos digitados.
+    console.log(soma); // Exibe a soma progressiva.
+    numero = parseFloat(prompt("Digite um numero: ")); // Pede um novo número.
+}
+
+console.log("Numero negativo encontrado"); // Exibe mensagem quando um número negativo é digitado.
